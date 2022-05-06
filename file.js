@@ -1,6 +1,9 @@
-function myFunction() {
-    document.getElementById("demo").style.backgroundColor = "yellow"
-    document.getElementById("demo1").style.backgroundColor = "red"
-    document.getElementById("demo2").style.borderBottomColor = "blue"
-    document.getElementById("demo3").style.borderBottomColor = "blue"
-    }
+$(document).ready(function(){
+    $("button").click(function(){
+        alert("hello");
+        $("#demo").css("background-color","yellow");
+        $("#demo1").css("background-color","red");
+        $("#demo2").css("borderBottomColor","blue");
+        $("#demo3").css("borderBottomColor","blue");
+    });
+});
